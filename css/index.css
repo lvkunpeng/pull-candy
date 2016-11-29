@@ -9,7 +9,7 @@ body {
     width: 100%;
     height: 64px;
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 996;
     background-color: #ffffff;
     box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
@@ -178,13 +178,14 @@ body {
 }
 
 /*手机版*/
-#head-right-phone{
+#head-right-phone {
     width: 110px;
     height: 28px;
     cursor: pointer;
     float: left;
 }
-#head-right-phone b{
+
+#head-right-phone b {
     background: url("../img/index/iphone.png") no-repeat center;
     width: 11px;
     height: 19px;
@@ -192,7 +193,8 @@ body {
     margin-left: 29px;
     margin-top: 5px;
 }
-#head-right-phone i{
+
+#head-right-phone i {
     margin-left: 5px;
     display: inline-block;
     margin-top: 7px;
@@ -203,74 +205,151 @@ body {
 
 /*------------------------以下为网站首页内容部分---------------------*/
 /*内容部分定位样式*/
-#context{
+#context {
     width: 1200px;
     height: 3000px;
     margin: 104px auto 0;
     background-color: lightblue;
 }
+
 /*轮播图样式*/
-#context-banner{
+#context-banner {
     width: 712px;
     height: 444px;
+    float: left;
 }
-#context-box{
+
+#context-box {
     width: 712px;
     height: 444px;
     position: relative;
     overflow: hidden;
+
 }
-.context-box-banner{
+
+.context-box-banner {
     height: 444px;
     position: absolute;
     left: 0;
+    width: 710px;
 }
-.context-box-banner div{
+
+.context-box-banner div {
     width: 712px;
     height: 444px;
-    float:left;
+    float: left;
+    background-color: #ffffff;
 }
+
 /*轮播图中轮播点样式*/
-#context-box ul{
+#context-box ul {
     width: 100px;
-    height: 12px;
+    height: 20px;
     position: absolute;
-    bottom: 55px;
+    bottom: 45px;
     right: 70px;
+    z-index: 2;
 }
-#context-box li{
+
+#context-box li {
     float: left;
     margin-left: 9px;
     cursor: pointer;
-
 }
+
 /*标点点亮属性*/
-#context-box li.on{
+#context-box li.on {
     width: 12px;
     height: 12px;
-    background:url("../img/spring/spring-1.png") no-repeat -642px -244px;
+    background: url("../img/spring/spring-1.png") no-repeat -642px -244px;
 }
+
 /*非点亮属性*/
-#context-box li.off{
+#context-box li.off {
     width: 10px;
     height: 10px;
-    background:url("../img/spring/spring-1.png") no-repeat -622px -244px;
+    background: url("../img/spring/spring-1.png") no-repeat -622px -244px;
 }
+
 /*左右切换按钮样式*/
-#context-box a{
+#context-box a {
     width: 28px;
     height: 40px;
     position: absolute;
     background: url("../img/spring/spring-1.png") no-repeat;
     top: 195px;
 }
-#context-box a.context-banner-left{
+
+#context-box a.context-banner-left {
     left: 0;
     background-position: -542px -243px;
     display: none;
 }
-#context-box a.context-banner-right{
+
+#context-box a.context-banner-right {
     right: 0;
     background-position: -582px -243px;
     display: none;
+}
+
+/*轮播图上覆盖框设置*/
+#context-box-cover {
+    width: 632px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 39px;
+    bottom: 28px;
+    padding-left: 17px;
+    padding-top: 16px;
+}
+
+/*轮播图上覆盖框文字*/
+#context-box-txt {
+    font-size: 28px;
+    color: #e3e5e8;
+    position: absolute;
+    margin-top: 365px;
+    margin-left: -660px;
+    z-index: 2;
+}
+
+/*轮播图部分尚存的问题有：点击左右按钮轮播图滞后停止，ajax数据显示的图片描述随图片移动，图片刷新延迟加载时会显示第二个描述框*/
+
+/*以下为主页内容部分社区热点以及app下载链接*/
+#context-hot-APP{
+    width: 468px;
+    background-color: #f1f2f3;
+    float: right;
+
+}
+#context-hot{
+    width: 404px;
+    height: 289px;
+    padding: 0 32px;
+    background-color: #ffffff;
+    border: 1px solid #dedfe0;
+}
+#context-hot h3{
+    font-size: 16px;
+    padding-top: 14px;
+    color: #666666;
+    height: 36px;
+    line-height: 1.5;
+    border-bottom: 1px solid #ebebeb;
+}
+#context-APP{
+    width: 468px;
+    height: 132px;
+    margin-top: 20px;
+    border: 1px solid #dedfe0;
+    background: url("../img/index/APP.jpeg") no-repeat center;
+}
+#context-APP a{
+    display: block;
+    height: 100%;
+    text-indent: -9999px;
+    /*首行文本缩进*/
+    /*a标签不设置背景，默认可显示下面内容*/
 }

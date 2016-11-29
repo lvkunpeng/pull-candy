@@ -28,8 +28,8 @@ MyBanner.prototype = {
             _this.autoMove()
         }, 5000);
         this.overout();
-        // this.handleChange();
-        // this.leftRight()
+        this.handleChange();
+        this.leftRight()
 
     },
     getData: function () {
@@ -48,14 +48,14 @@ MyBanner.prototype = {
         var strDiv = '';
         var strLi = '';
         $.each(this.data, function ($1, $2) {
-            strDiv += `<div><img src="" alt="" realImg ="${$2.imgSrc}"></div>`;
+            strDiv += `<div><img src="" alt="" realImg ="${$2.imgSrc}"><span id="context-box-txt">${$2.desc}</span></div>`;
             strLi += $1 == 0 ? `<li class="on"></li>` : '<li class="off"></li>';
         });
         this.$boxInner[0].innerHTML += strDiv;
         this.$ul[0].innerHTML += strLi;
         this.$aDiv = this.$boxInner.find('div');
         this.$aLi = this.$box.find('li');
-        this.$boxInner.css('width',parseInt($(this.$aDiv[0]).css('width'))*this.$aDiv.length)
+        this.$boxInner.css('width', parseInt($(this.$aDiv[0]).css('width')) * this.$aDiv.length)
     },
     lazyImg: function () {
         var _this = this;
@@ -76,13 +76,13 @@ MyBanner.prototype = {
         })
     },
     autoMove: function () {
-        if (this.n >= this.$aDiv.length-1) {
+        if (this.n >= this.$aDiv.length - 1) {
             this.n = -1;
         }
         this.n++;
         this.$boxInner.animate({
-           left:-this.n*parseInt(this.$aDiv.css('width'))+'px',
-        },500);
+            left: -this.n * parseInt(this.$aDiv.css('width')) + 'px',
+        }, 500);
         this.binnerTip();
     },
     binnerTip: function () {
@@ -109,8 +109,8 @@ MyBanner.prototype = {
         var _this = this;
         this.$aLi = this.$box.find('li');
         this.$aLi.click(function () {
-            _this.n = $(this).index();
-            _this.setBanner();
+            _this.n = $(this).index() - 1;
+            _this.autoMove();
         })
     },
     leftRight: function () {
@@ -123,9 +123,11 @@ MyBanner.prototype = {
                 _this.n = _this.$aLi.length;
             }
             _this.n--;
-            _this.setBanner();
+            _this.$boxInner.animate({
+                left: -_this.n * parseInt(_this.$aDiv.css('width')) + 'px',
+            }, 500);
+            _this.binnerTip();
         })
     }
-
 
 };
