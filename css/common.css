@@ -1,0 +1,80 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, iframe {
+    margin: 0;
+    padding: 0;
+}
+
+body, input, button, select, textarea, table {
+    font-size: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    border: 0 none;
+}
+
+ol, ul, li, dl, dt, dd {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.clearfix:after {
+    overflow: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+/*清除浮动*/
+
+.clearfix {
+    *zoom: 1;
+}
+/*ie6*/
+
+
+.clear {
+    clear: both;
+    height: 0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+a {
+    color: #555;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f60;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #f60;
+}
+
+a:focus {
+    outline: none;
+}
+i{
+    font-style:normal;
+}
+b{
+    font-weight: normal;
+}
