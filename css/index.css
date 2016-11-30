@@ -318,20 +318,27 @@ body {
 /*轮播图部分尚存的问题有：点击左右按钮轮播图滞后停止，ajax数据显示的图片描述随图片移动，图片刷新延迟加载时会显示第二个描述框*/
 
 /*以下为主页内容部分社区热点以及app下载链接*/
-#context-hot-APP{
+#context-a {
+    width: 1200px;
+    height: 445px;
+}
+
+#context-hot-APP {
     width: 468px;
     background-color: #f1f2f3;
     float: right;
 
 }
-#context-hot{
+
+#context-hot {
     width: 404px;
     height: 289px;
     padding: 0 32px;
     background-color: #ffffff;
     border: 1px solid #dedfe0;
 }
-#context-hot h3{
+
+#context-hot h3 {
     font-size: 16px;
     padding-top: 14px;
     color: #666666;
@@ -339,17 +346,79 @@ body {
     line-height: 1.5;
     border-bottom: 1px solid #ebebeb;
 }
-#context-APP{
+
+#context-APP {
     width: 468px;
     height: 132px;
     margin-top: 20px;
     border: 1px solid #dedfe0;
     background: url("../img/index/APP.jpeg") no-repeat center;
 }
-#context-APP a{
+
+#context-APP a {
     display: block;
     height: 100%;
     text-indent: -9999px;
     /*首行文本缩进*/
     /*a标签不设置背景，默认可显示下面内容*/
+}
+
+/*主页专辑精选*/
+#context-special-title {
+    width: 1200px;
+    height: 27px;
+    line-height: 27px;
+    font-size: 18px;
+    margin-top: 41px;
+    border-top: 1px solid #d4d5d5;
+    padding: 30px 0;
+    display: inline-block;
+}
+
+/*a链接样式*/
+#context-special-pass {
+    display: inline-block;
+    float: right;
+    width: 80px;
+    height: 28px;
+    border-radius: 2px;
+}
+
+#context-special-pass div {
+    width: 80px;
+    height: 28px;
+    border-radius: 2px;
+    position: absolute;
+}
+
+#context-special-pass div:hover {
+    background: rgba(3, 3, 3, 0.1);
+}
+
+#context-special-pass a {
+    display: inline-block;
+    width: 80px;
+    height: 28px;
+    border-radius: 2px;
+    background-color: #22b4f6;
+    font-size: 13px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+#context-b{
+    width: 1200px;
+    height: 328px;
+}
+#context-b ul{
+    width: 1222px;
+    height: 328px;
+}
+#context-b ul li{
+    width: 224px;
+    height: 328px;
+    background-color: #ffffff;
+    float: left;
+    margin-right: 20px;
 }
