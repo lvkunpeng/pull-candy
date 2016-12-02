@@ -1,0 +1,238 @@
+/*------------------以下为顶部样式部分----------------*/
+body {
+    height: 2000px;
+    background-color: #f1f2f3;
+}
+
+/*导航栏固定定位*/
+#header-1 {
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    top: 0;
+    z-index: 996;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*头部布局*/
+#header-1 #header {
+    width: 1200px;
+    height: 64px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+/*logo配图*/
+#header-1 #header #logo {
+    width: 80px;
+    height: 64px;
+    display: block;
+    background: url("../img/index/logo.png") 0 12px no-repeat;
+    text-indent: -9999px;
+    float: left;
+}
+
+/*分类导航外框*/
+#header-1 #header #head-nav-1 {
+    margin-left: 20px;
+    width: 57px;
+    height: 26px;
+    border: 1px solid #e1e1e1;
+    float: left;
+    line-height: 26px;
+    font-size: 14px;
+    color: #666666;
+    padding-left: 11px;
+    margin-top: 18px;
+    border-radius: 2px;
+}
+
+/*改变鼠标时移入的指针*/
+#header-1 #header #head-nav-1:hover {
+    cursor: pointer;
+}
+
+/*分类导航翻转箭头*/
+#header #head-nav-1 i {
+    width: 8px;
+    height: 8px;
+    background-color: lightgrey;
+    display: inline-block;
+    margin-left: 6px;
+}
+
+/*头部搜索框*/
+#search {
+    width: 366px;
+    height: 32px;
+    float: left;
+    margin-left: 52px;
+    margin-top: 16px;
+    /*border: 1px solid #c5c5c5;*/
+}
+
+#search form {
+    width: 366px;
+    height: 30px;
+    position: relative;
+}
+
+#search form #kw {
+    width: 362px;
+    height: 28px;
+    padding-left: 4px;
+    line-height: 21px;
+    /*border-style: none;*/
+    border: 1px solid #cccccc;
+    /*此处去除输入框的立体效果，同时也去除了边框，通过外层的盒子添加边框，模仿此处的边框*/
+    /*此处在行内样式中还写入了autocomplete= off 禁止浏览器记住搜索框中输入过的内容，防止数据泄露*/
+    outline: none;
+    /*去除选择的蓝框*/
+
+}
+
+/*搜索框的放大镜按钮*/
+#search form #kp {
+    width: 32px;
+    height: 28px;
+    border: none;
+    position: absolute;
+    right: -3px;
+    top: 2px;
+    background: url("../img/index/放大镜.png") no-repeat;
+    /*button此处与前面的input框出现一个间隙，即使设置了间距也不能清除，原因是读取了中间的空格，html中需要相连*/
+}
+
+/*顶部右边部分*/
+/*整体定位*/
+#head-right {
+    width: 440px;
+    height: 28px;
+    float: left;
+    /*background-color: lightblue;*/
+    margin-left: 170px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+/*分割线样式*/
+#head-right .line {
+    background-color: #ebebeb;
+    width: 1px;
+    height: 24px;
+    float: left;
+}
+
+/*堆糖生活家*/
+#head-right-life {
+    margin-left: 26px;
+    float: left;
+    margin-bottom: 5px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+/*new标签*/
+#head-right span {
+    float: left;
+    width: 28px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: #ff4466;
+    font-size: 7px;
+    text-align: center;
+    color: #ffffff;
+    display: block;
+    margin-left: 4px;
+    margin-top: 6px;
+    margin-right: 25px;
+}
+
+/*注册*/
+#head-right-register {
+    width: 52px;
+    height: 28px;
+    background-color: #ff4466;
+    font-size: 10px;
+    color: #ffffff;
+    line-height: 28px;
+    float: left;
+    margin-left: 25px;
+    text-align: center;
+    border-radius: 3px;
+    margin-right: 25px;
+    cursor: pointer;
+
+}
+
+/*登录*/
+#head-right-login {
+    width: 24px;
+    height: 28px;
+    cursor: pointer;
+    margin-left: 25px;
+    margin-right: 25px;
+    line-height: 28px;
+    float: left;
+}
+
+/*手机版*/
+#head-right-phone {
+    width: 110px;
+    height: 28px;
+    cursor: pointer;
+    float: left;
+}
+
+#head-right-phone b {
+    background: url("../img/index/iphone.png") no-repeat center;
+    width: 11px;
+    height: 19px;
+    display: inline-block;
+    margin-left: 29px;
+    margin-top: 5px;
+}
+
+#head-right-phone i {
+    margin-left: 5px;
+    display: inline-block;
+    margin-top: 7px;
+    width: 38px;
+    height: 14px;
+    position: absolute;
+}
+/*以下为热门部分样式*/
+#water{
+    width: 1200px;
+    margin: 100px auto 0;
+}
+#water-hot{
+    width: 1200px;
+    height: 64px;
+    margin-top: 100px;
+    background-color: #ffffff;
+}
+#water-hot-left{
+    width: 222px;
+    height: 64px;
+    background-color: #fff;
+    float: left;
+    font-size: 22px;
+    color: #444;
+    line-height: 64px;
+    text-align: center;
+    font-weight: bold;
+}
+#water-hot-right{
+    height: 64px;
+    width: 978px;
+    background-color: #ffffff;
+    float: right;
+}
+#water-chose{
+    margin-top: 20px;
+    padding-bottom: 16px;
+    margin-bottom: 0;
+    color: #666;
+}

@@ -207,9 +207,8 @@ body {
 /*内容部分定位样式*/
 #context {
     width: 1200px;
-    height: 3000px;
     margin: 104px auto 0;
-    background-color: lightblue;
+    padding-bottom: 80px;
 }
 
 /*轮播图样式*/
@@ -384,41 +383,317 @@ body {
     border-radius: 2px;
 }
 
+/*往期回顾样式*/
 #context-special-pass div {
     width: 80px;
     height: 28px;
     border-radius: 2px;
-    position: absolute;
+    position: relative;
+    background-color: #22b4f6;
 }
 
-#context-special-pass div:hover {
-    background: rgba(3, 3, 3, 0.1);
+/*往期回顾遮罩层*/
+#context-special-pass a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
+/*往期回顾a标签样式*/
 #context-special-pass a {
     display: inline-block;
     width: 80px;
     height: 28px;
     border-radius: 2px;
-    background-color: #22b4f6;
     font-size: 13px;
     text-align: center;
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    position: absolute;
+    z-index: 3;
 }
-#context-b{
+
+/*专辑精选样式*/
+#context-b {
     width: 1200px;
     height: 328px;
+    padding-bottom: 40px;
 }
-#context-b ul{
+
+#context-b ul {
     width: 1222px;
     height: 328px;
 }
-#context-b ul li{
+
+#context-b ul li {
     width: 224px;
     height: 328px;
     background-color: #ffffff;
     float: left;
     margin-right: 20px;
+    position: relative;
+}
+
+#context-b img {
+    position: relative;
+    width: 224px;
+    height: 224px;
+}
+
+#context-b .img-hyperlink {
+    width: 224px;
+    height: 224px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/*专辑样式遮罩层*/
+#context-b .img-hyperlink:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*专辑封面下面a标签样式*/
+#context-b .text-hyperlink {
+    width: 204px;
+    height: 34px;
+    color: #444444;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+    display: block;
+    font-weight: 700;
+}
+
+/*专辑下面收藏人数*/
+#context-b p {
+    width: 202px;
+    height: 18px;
+    color: #888;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#context-b span {
+    width: 202px;
+    height: 18px;
+    display: block;
+    padding-left: 10px;
+    color: #888;
+    font-size: 12px;
+}
+
+/*专辑精选下横线*/
+#context-b .fillet-a {
+    width: 220px;
+    height: 1px;
+    background-color: #dedfe0;
+    position: relative;
+    top: 10px;
+}
+
+#context-b .fillet-b {
+    width: 216px;
+    height: 1px;
+    background-color: #dedfe0;
+    position: relative;
+    top: 10px;
+}
+
+/*单品推荐标题样式*/
+#context-one-title {
+    width: 1200px;
+    height: 17px;
+    padding: 30px 0;
+    line-height: 17px;
+    font-weight: normal;
+    font-style: normal;
+    border-top: 1px solid #d4d5d5;
+    font-family: tahoma, arial, sans-serif;
+    font-size: 18px;
+}
+
+#context-one-title-right {
+    width: 400px;
+    float: right;
+}
+
+#context-one-title a {
+    padding: 0 12px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-right: 1px solid #dddddd;
+}
+
+/*改变最后的鼠标事件属性-可以直接用color改变下划线颜色*/
+#context-one-title a:hover {
+    text-decoration: underline;
+    color: #444444;
+}
+
+/*去除最后一个a标签边框*/
+#context-one-title .last-none {
+    border-right: 0 solid #dddddd;
+}
+
+#context-one-title-right span {
+    font-size: 12px;
+    color: #666666;
+}
+
+/*精选单品样式*/
+#context-d {
+    width: 1200px;
+    height: 328px;
+    padding-bottom: 68px;
+}
+
+#context-d ul {
+    width: 1222px;
+    height: 328px;
+}
+
+#context-d ul li {
+    width: 224px;
+    height: 296px;
+    background-color: #ffffff;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    border-bottom: 3px solid #e3e4e5;
+}
+
+#context-d img {
+    position: relative;
+    width: 224px;
+    height: 224px;
+}
+
+#context-d .img-hyperlink {
+    width: 224px;
+    height: 224px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#context-d .img-hyperlink:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#context-d .text-hyperlink {
+    width: 204px;
+    height: 34px;
+    color: #444444;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+    display: block;
+    font-weight: 700;
+}
+
+#context-d p {
+    width: 202px;
+    height: 18px;
+    color: #888;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+/*大家都在逛样式部分*/
+
+#context-g h2 {
+    width: 1200px;
+    height: 27px;
+    padding: 30px 0;
+    line-height: 27px;
+    font-size: 18px;
+    border-top: 1px solid #ebebeb;
+}
+
+/*瀑布流*/
+#context-h {
+    height: 2500px;
+}
+
+#context-h ul {
+    float: left;
+    width: 224px;
+    margin-right: 20px;
+}
+
+#context-h ul.last {
+    margin-right: 0;
+}
+
+#context-h li {
+    width: 224px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #E3E4E5;
+}
+
+#context-h img {
+    width: 224px;
+}
+
+#context-h div.context-h-down {
+    width: 224px;
+    background-color: #ffffff;
+}
+
+#context-h div.context-h-a {
+    padding: 10px 12px;
+    color: #444;
+}
+
+#context-h div.context-h-b {
+    padding: 5px 5px 8px 10px;
+}
+
+#context-h div.context-h-c {
+    border-top: 1px solid #f0f0f0;
+    padding: 5px 5px 8px 10px;
+}
+
+/*浏览更多*/
+#context-i {
+    width: 1200px;
+    height: 40px;
+    padding-top: 20px;
+}
+
+#context-i div {
+    width: 120px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #22b4f6;
+    border-radius: 3px;
+}
+
+#context-i div a {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
+    display: block;
+}
+#context-i div a:hover{
+    background-color: rgba(0,0,0,0.2);
+    text-decoration: none;
+}
+
+/*------------------------尾部样式-----------------------*/
+#foot{
+    height: 225px;
+    background-color: #e1e2e3;
+    border-top: 1px solid #d8d9da;
+    padding: 22px 0;
 }
